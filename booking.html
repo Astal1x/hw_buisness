@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Бронирование | Вечеринка с начинкой</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/script.js" defer></script>
+</head>
+<body>
+  <nav class="navbar">
+    <a href="index.html" class="logo">🎉Вечеринка с начинкой</a>
+    <ul class="nav-links">
+        <li><a href="index.html">Главная</a></li>
+        <li><a href="about.html">О нас</a></li>
+        <li><a href="programs.html">Экономика</a></li>
+        <li><a href="services.html">Услуги</a></li>
+        <li><a href="reviews.html">Отзывы</a></li>
+        <li><a href="booking.html">Риски и решения</a></li>
+        <li><a href="contact.html">Контакты</a></li>
+      </ul>
+  </nav>
+
+
+  <section class="booking-section">
+    <h1>Забронируйте вашу вечеринку!</h1>
+        <form id="booking-form">
+      <div class="form-group">
+        <label for="cake">Выберите торт:</label>
+        <select id="cake" name="cake">
+          <option value="10000">Торт "Классический" - 10,000 тенге</option>
+          <option value="15000">Торт "Шоколадный" - 15,000 тенге</option>
+          <option value="20000">Торт "Фруктовый" - 20,000 тенге</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label for="service">Выберите дополнительные услуги:</label>
+        <div class="checkbox-group">
+          <label><input type="checkbox" class="add-service" value="5000"> Прокат костюмов для аниматоров - 5,000 тенге</label>
+          <label><input type="checkbox" class="add-service" value="10000"> Фото- и видеосъемка - 10,000 тенге</label>
+          <label><input type="checkbox" class="add-service" value="8000"> Создание сценария - 8,000 тенге</label>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label for="date">Выберите дату:</label>
+        <input type="date" id="date" name="date" required>
+      </div>
+
+      <div class="form-group">
+        <label for="time">Выберите время:</label>
+        <input type="time" id="time" name="time" required>
+      </div>
+
+      <div class="total">
+        <p><strong>Итоговая сумма: </strong><span id="total-amount">10,000</span> тенге</p>
+      </div>
+
+      <button type="submit" class="btn">Забронировать</button>
+    </form>
+  </section>
+  <footer>
+    <p>&copy; 2025 Вечеринка с начинкой. Все права защищены.</p>
+  </footer>
+</body>
+</html>
